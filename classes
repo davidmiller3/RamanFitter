@@ -1,0 +1,29 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Oct 01 12:05:47 2016
+
+@author: David
+"""
+
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Feb 21 12:12:09 2016
+
+@author: David
+"""
+from matplotlib.figure import Figure
+import matplotlib.pyplot as plt 
+import numpy as np
+import pandas as pd
+import math
+import os
+import lmPeakFit as lpf
+import lmfit
+
+class ramanScan():
+    def __init__(self,wnarray, iarray,xpos, ypos):
+#Path to data
+        self.xpos=xpos
+        self.ypos=ypos
+        self.wnarray=wnarray
+        self.iarray = iarray
